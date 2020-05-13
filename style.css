@@ -1,0 +1,25 @@
+body {
+    background-color: #fefefe;
+}
+h2 {
+    color: #1460AA;
+}
+.hotpink-header{
+    color: hotpink;
+}
+#top {
+    background-color: #4ce966;
+}
+
+a {
+    color: orange;
+}
+header a {
+    color: #2ce01c;
+}
+.paragraf {
+    color: green;
+}
+.h {
+    background-color: #2ce01c;
+}
