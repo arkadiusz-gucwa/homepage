@@ -23,3 +23,17 @@ header a {
 .h {
     background-color: #2ce01c;
 }
+main {
+  width: 1000px;
+  margin: auto;
+}
+
+footer {
+    width: 1000px;
+  margin: auto;
+}
+img {
+    margin: 0 auto 0 auto;
+    border-radius: 10px;
+    
+}
