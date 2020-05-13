@@ -35,5 +35,22 @@ footer {
 img {
     margin: 0 auto 0 auto;
     border-radius: 10px;
-    
+}
+nav {
+    width: 1000px;
+    margin: auto;
+}
+.navigation {
+    background: greenyellow;
+    padding: 16px;
+    border-radius: 8px;
+}
+.navigation__link {
+    color: white;
+    display: inline-block;
+    margin-right: 20px;
+}
+.navigation__link--homepage {
+    background: yellow;
+    color: black;
 }
