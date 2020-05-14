@@ -1,5 +1,5 @@
 body {
-    background-color: #fefefe;
+    background-color: #93eb8b;
 }
 h2 {
     color: #1460AA;
@@ -24,12 +24,12 @@ header a {
     background-color: #2ce01c;
 }
 main {
-  width: 1000px;
+  max-width: 1000px;
   margin: auto;
 }
 
 footer {
-    width: 1000px;
+    max-width: 1000px;
   margin: auto;
 }
 img {
@@ -37,11 +37,11 @@ img {
     border-radius: 10px;
 }
 nav {
-    width: 1000px;
+    max-width: 1000px;
     margin: auto;
 }
 .navigation {
-    background: greenyellow;
+    background: rgb(47, 120, 255);
     padding: 16px;
     border-radius: 8px;
 }
