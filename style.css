@@ -1,5 +1,13 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
 body {
-    background-color: #93eb8b;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(132,184,201,0.804359243697479) 41%, rgba(0,212,255,1) 100%);
 }
 h2 {
     color: #1460AA;
@@ -44,6 +52,8 @@ nav {
     background: rgb(47, 120, 255);
     padding: 16px;
     border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
 }
 .navigation__link {
     color: white;
@@ -53,4 +63,14 @@ nav {
 .navigation__link--homepage {
     background: yellow;
     color: black;
+}
+.grid {
+    display: grid;
+    grid-template-areas: "header header"
+    "section section"
+    "footer footer";
+    grid-template-columns: 1fr 200px;
+}
+#top {
+    grid-area: header;
 }
