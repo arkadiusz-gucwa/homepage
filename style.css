@@ -1,20 +1,25 @@
 html {
     box-sizing: border-box;
 }
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
 body {
+    display: grid;
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(132,184,201,0.804359243697479) 41%, rgba(0,212,255,1) 100%);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(59,200,65,0.958420868347339) 27%, rgba(0,212,255,1) 100%);
 }
+
 h2 {
     color: #1460AA;
 }
-.hotpink-header{
+
+.hotpink-header {
     color: hotpink;
 }
+
 #top {
     background-color: #4ce966;
 }
@@ -22,32 +27,39 @@ h2 {
 a {
     color: orange;
 }
+
 header a {
     color: #2ce01c;
 }
+
 .paragraf {
     color: rgb(7, 83, 6);
 }
+
 .h {
     background-color: #2ce01c;
 }
+
 main {
-  max-width: 1000px;
-  margin: auto;
+    max-width: 1000px;
+    margin: auto;
 }
 
 footer {
     max-width: 1000px;
-  margin: auto;
+    margin: auto;
 }
+
 img {
     margin: 0 auto 0 auto;
     border-radius: 10px;
 }
+
 nav {
     max-width: 1000px;
     margin: auto;
 }
+
 .navigation {
     background: rgb(47, 120, 255);
     padding: 16px;
@@ -55,22 +67,50 @@ nav {
     display: flex;
     justify-content: space-around;
 }
+
 .navigation__link {
     color: white;
     display: inline-block;
     margin-right: 20px;
 }
+
 .navigation__link--homepage {
     background: yellow;
     color: black;
 }
+body {
+    display: grid;
+}
 .grid {
     display: grid;
-    grid-template-areas: "header header"
-    "section section"
-    "footer footer";
+    grid-template-areas: "header header" "section section" "footer footer";
     grid-template-columns: 1fr 200px;
+    column-gap: 16px;
+    row-gap: 16px;
+    grid-template-rows: 100px;
+    width: 770px;
+    margin: 16px auto;
+    
 }
+
 #top {
     grid-area: header;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        display: grid;
+        background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(132, 184, 201, 0.804359243697479) 41%, rgba(0, 212, 255, 1) 100%);
+    }
+    footer {
+        background: blue;
+    }
+    .mobile {
+        display: none;
+    }
+}
+
+.mobile {
+    color: yellow;
 }
