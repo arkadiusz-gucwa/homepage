@@ -8,8 +8,14 @@ html {
 
 body {
     display: grid;
-    background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(59,200,65,0.958420868347339) 27%, rgba(0,212,255,1) 100%);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(59, 92, 200, 0.958) 27%, rgba(0, 212, 255, 1) 100%);
+    background-attachment: fixed;
+}
+
+main {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(59, 172, 200, 0.958) 27%, rgba(0, 212, 255, 1) 100%);
 }
 
 h2 {
@@ -43,6 +49,7 @@ header a {
 main {
     max-width: 1000px;
     margin: auto;
+    width: 100%;
 }
 
 footer {
@@ -53,6 +60,7 @@ footer {
 img {
     margin: 0 auto 0 auto;
     border-radius: 10px;
+    max-width: 100%;
 }
 
 nav {
@@ -78,30 +86,21 @@ nav {
     background: yellow;
     color: black;
 }
-body {
-    display: grid;
-}
-.grid {
-    display: grid;
-    grid-template-areas: "header header" "section section" "footer footer";
-    grid-template-columns: 1fr 200px;
-    column-gap: 16px;
-    row-gap: 16px;
-    grid-template-rows: 100px;
-    width: 770px;
-    margin: 16px auto;
-    
-}
 
 #top {
     grid-area: header;
 }
 
 @media screen and (min-width: 768px) {
-    body {
+    .grid {
         display: grid;
-        background: rgb(2, 0, 36);
-        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(132, 184, 201, 0.804359243697479) 41%, rgba(0, 212, 255, 1) 100%);
+        grid-template-areas: "header header" "section section" "footer footer";
+        grid-template-columns: 1fr 200px;
+        column-gap: 16px;
+        row-gap: 16px;
+        grid-template-rows: 100px;
+        width: 770px;
+        margin: 16px auto;
     }
     footer {
         background: blue;
@@ -114,3 +113,5 @@ body {
 .mobile {
     color: yellow;
 }
+
+.laptop {}
